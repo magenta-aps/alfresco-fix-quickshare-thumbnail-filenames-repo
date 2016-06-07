@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+    <!-- To override a built-in Java backed Alfresco webscript, we must do this... -->
+    <!-- Credit for this trick: http://gagravarr.livejournal.com/144503.html -->
+    <import resource="classpath*:alfresco/module/*/module-webscripts-context.xml" />
+</beans>

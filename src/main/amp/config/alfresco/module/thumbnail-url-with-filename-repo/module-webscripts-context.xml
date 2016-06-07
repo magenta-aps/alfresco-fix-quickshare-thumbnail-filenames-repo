@@ -17,18 +17,8 @@
 	limitations under the License.
 -->
 <beans>
-	<!--<bean id="${project.artifactId}.thumbnailInterceptor"/>-->
-	<!--<bean class="org.springframework.aop.framework.autoproxy.BeanNameAutoProxyCreator">-->
-		<!--<property name="beanNames"-->
-				  <!--value="webscript.org.alfresco.repository.quickshare.content-thumbnail-noauth.get"/>-->
-		<!--<property name="interceptorNames">-->
-			<!--<list>-->
-				<!--<value>${project.artifactId}.thumbnailInterceptor</value>-->
-			<!--</list>-->
-		<!--</property>-->
-	<!--</bean>-->
 	<!-- unauthenticated (note: equivalent to authenticated "thumbnail.get") -->
-	<bean id="webscript.org.alfresco.repository.quickshare.content-thumbnail-noauth.get" class="dk.magenta.alfresco.repo.QuickShareThumbnailContentGet"
+	<bean id="webscript.org.alfresco.repository.quickshare.content-thumbnail-noauth.get" class="dk.magenta.alfresco.repo.OverriddenQuickShareThumbnailContentGet"
 		  parent="webscript.org.alfresco.repository.quickshare.content-noauth.get">
 		<property name="myNodeService" ref="NodeService" />
 		<property name="myContentService" ref="ContentService" />
