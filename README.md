@@ -1,3 +1,5 @@
+Fixes the filenames returned by the quickshare thumbnail GET webscript to match the original node's filename and using the appropriate file extension for the thumbnail's mimetype.
+
 Alfresco Repo module which modifies the quickshare thumbnail GET webscript to
 send the filename of the thumbnail's source node (e.g. "my.pdf") instead of the
 name of the thumbnail itself (e.g. "pdf" if the thumbnail is called "pdf") in
