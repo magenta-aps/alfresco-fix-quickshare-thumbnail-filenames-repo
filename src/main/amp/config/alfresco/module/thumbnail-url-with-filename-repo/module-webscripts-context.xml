@@ -27,4 +27,16 @@
 		<property name="serviceRegistry" ref="ServiceRegistry"/>
 		<property name="delegate" ref="webscript.content.streamer" />
 	</bean>
+
+	<!-- This doesn't work -->
+	<!--<bean id="webscript.org.alfresco.repository.thumbnail.thumbnail.get"-->
+		  <!--class="dk.magenta.alfresco.repo.OverriddenThumbnailContentGet"-->
+		  <!--parent="webscript">-->
+		<!--<property name="myNodeService" ref="NodeService" />-->
+		<!--<property name="myContentService" ref="ContentService" />-->
+		<!--<property name="thumbnailService" ref="ThumbnailService" />-->
+		<!--<property name="scriptThumbnailService" ref="thumbnailServiceScript" />-->
+		<!--<property name="serviceRegistry" ref="ServiceRegistry"/>-->
+		<!--<property name="delegate" ref="webscript.content.streamer" />-->
+	<!--</bean>-->
 </beans>
